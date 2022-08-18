@@ -33,7 +33,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
   const totalBalance = parseFloat(updateBalance.innerText);
 
   if(newWithdrawAmount >= 5){
-    if(newWithdrawAmount < totalBalance && (totalBalance-newWithdrawAmount) >= 5){
+    if(newWithdrawAmount < totalBalance && (totalBalance - newWithdrawAmount) >= 5){
       previousWithdraw.innerText = newWithdrawAmount + previousWithdrawAmount;
       updateBalance.innerText = totalBalance - newWithdrawAmount;
       withdrawInput.value = '';
